@@ -23,4 +23,10 @@ public class MedunnaHomePage {
 
     @FindBy(linkText = "Room")
     public WebElement roomOption;
+
+
+    //dneme ali
+
+
+
 }
