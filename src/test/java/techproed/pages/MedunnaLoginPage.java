@@ -18,6 +18,8 @@ public class MedunnaLoginPage {
     @FindBy(id = "password")
     public WebElement passwordInput;
 
+    //Merhaba
+
     @FindBy(id = "rememberMe")
     public WebElement rememberMeCheckbox;
 
