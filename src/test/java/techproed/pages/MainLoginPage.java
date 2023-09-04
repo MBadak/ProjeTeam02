@@ -10,17 +10,17 @@ public class MainLoginPage {
 
     }
 
+    // Login sayfasi locateleri
     @FindBy(xpath = "//*[@class='header_link ms-2']")
-    public WebElement mainLogin;
+    public WebElement loginMenusu;
 
-    @FindBy(xpath = "(//*[@class='form-control'])[1]")
+    @FindBy(xpath = "//*[@id='username']")
     public WebElement username;
 
     @FindBy(xpath = "//*[@id='password']")
     public WebElement password;
 
     @FindBy(xpath = "//*[@class='fw-semibold btn btn-primary']")
-    public WebElement login;
-
+    public WebElement loginButton;
 
 }
