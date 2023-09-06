@@ -12,7 +12,7 @@ import org.junit.runner.RunWith;
                            "rerun:TestOutput/failed_scenario.txt"},
         features = "src/test/resources",
         glue = {"techproed/stepDefinition"},
-        tags = "",       // bu kismi push ederken bos birakin
+        tags = "@US06/TC02",       // bu kismi push ederken bos birakin
         dryRun = false,
         monochrome = true
 
