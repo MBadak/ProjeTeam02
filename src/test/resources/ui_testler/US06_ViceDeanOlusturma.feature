@@ -29,6 +29,7 @@ Feature: US06 Dean, Vice Dean Olusturma
     And Kullanici sayfayi kapatir.
 
 
+
     Examples:
       | Name           | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name      | Password        |
       | ViceDeanTeam02 | Team02  | Deutschland | 01-01-1991    | 963-852-7410 | 369-87-4102 | ViceDeanTeam02 | ViceDeanTeam02. |

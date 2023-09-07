@@ -1,1 +1,1 @@
-file:src/test/resources/ui_testler/US23_ViceDeanOlusturma.feature:70
+file:src/test/resources/ui_testler/US07_Dean_Masajlari_Okur_Siler.feature:21
