@@ -20,7 +20,7 @@ public class ViceDeanManagementHomePage {
     public WebElement viceDeanManagement;
 
     @FindBy(xpath = "//*[text()='Contact Get All']")
-    public WebElement vontactGetAll;
+    public WebElement contactGetAll;
 
     @FindBy(xpath = "//*[text()='Logout']")
     public WebElement logout;
@@ -185,7 +185,7 @@ public class ViceDeanManagementHomePage {
     public WebElement contactName;
 
     @FindBy(xpath = "((//tr)[2]/td)[2]")
-    public WebElement lcontactMail;
+    public WebElement contactMail;
 
     @FindBy(xpath = "((//tr)[2]/td)[3]")
     public WebElement contactDate;
@@ -195,6 +195,9 @@ public class ViceDeanManagementHomePage {
 
     @FindBy(xpath = "((//tr)[2]/td)[5]")
     public WebElement message;
+
+    @FindBy(xpath = "((//tr)[2]/td)[6]")
+    public WebElement deleteButton;
 
     // Contact Message Listesindeki  en alt soldaki sayfa ilerletme lokateleri üstekiler ile ayni
 
