@@ -7,7 +7,6 @@ Feature: US23 Admin, Vice Dean Olusturma
     Then Kullanici Admin hesabi ile Sing in yapar
     Then Kullanici Menu botonuna tiklar
     And Kullanici Vice Dean Management tiklar
-
     And Kullanici tüm alanlarin bos oldugunu test eder
     Then Kullanici "<Name>" alanina gecerli bir ad girer
     And  Kullanici Name alaninin bos olmadisini test eder
@@ -30,8 +29,6 @@ Feature: US23 Admin, Vice Dean Olusturma
     Then Kullanici Submit butonunu tiklar
     And Kullanici basarili bir sekilde Vice Dean ekledigini dogrular
     And Kullanici sayfayi kapatir
-
-
 
     Examples:
       | Name           | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name      | Password        |
@@ -118,6 +115,7 @@ Feature: US23 Admin, Vice Dean Olusturma
     Then Kullanici "<Password2>" kutusuna rakam kullanmadan sifre girer
     And Kullanici One number yazisini gordugunu dogrular
     And Kullanici sayfayi kapatir
+
     Examples:
       | Name            | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name       | Password | Password1 | Password2 |
       | ViceDeanTeam02m | Team02e | Deutschland | 01-01-1991    | 963-852-0147 | 369-87-7410 | ViceDeanTeam02m | abc123., | ABC123., | abcABC., |
