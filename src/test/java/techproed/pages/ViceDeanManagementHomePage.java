@@ -10,16 +10,17 @@ public class ViceDeanManagementHomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+
     // Menü tiklaninca solda acilan Main Menu locateleri
 
     @FindBy(xpath = "//*[text()='Menu']")
     public WebElement menuButton;
 
-    @FindBy(xpath = "//*[text()='Vice Dean Management']")
+    @FindBy(xpath = "//a[text()='Vice Dean Management']")
     public WebElement viceDeanManagement;
 
     @FindBy(xpath = "//*[text()='Contact Get All']")
-    public WebElement vontactGetAll;
+    public WebElement contactGetAll;
 
     @FindBy(xpath = "//*[text()='Logout']")
     public WebElement logout;
@@ -29,41 +30,44 @@ public class ViceDeanManagementHomePage {
     @FindBy(xpath = "//*[@id='name']")
     public WebElement name;
 
-    @FindBy(xpath = "(//*[text()='Required'])[1]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[1]")
     public WebElement requiredName;
 
     @FindBy(xpath = "//*[@id='surname']")
     public WebElement surname;
 
-    @FindBy(xpath = "(//*[text()='Required'])[2]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[2]")
     public WebElement requiredSurname;
 
     @FindBy(xpath = "//*[@id='birthPlace']")
     public WebElement birthPlace;
 
-    @FindBy(xpath = "(//*[text()='Required'])[3]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[3]")
     public WebElement requiredBirthPlace;
 
     @FindBy(xpath = "//*[@id='birthDay']")
     public WebElement dateOfBirth;
 
-    @FindBy(xpath = "(//*[text()='Required'])[4]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[4]")
     public WebElement requiredDateOfBirth;
 
     @FindBy(xpath = "//*[@id='phoneNumber']")
     public WebElement phoneNumber;
 
-    @FindBy(xpath = "(//*[text()='Required'])[5]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[5]")
     public WebElement requiredPhoneNummer;
 
     @FindBy(xpath = "//*[@id='ssn']")
     public WebElement ssn;
 
-    @FindBy(xpath = "(//*[text()='Required'])[6]")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[6]")
     public WebElement requiredSsn;
 
     @FindBy(xpath = "//*[@id='username']")
     public WebElement userName;
+
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[7]")
+    public WebElement requiredUsername;
 
     @FindBy(xpath = "//*[@id='password']")
     public WebElement password;
@@ -88,7 +92,7 @@ public class ViceDeanManagementHomePage {
     public WebElement ssn11KarakterEksikUyarisi;
 
 
-    @FindBy(xpath = "//*[text()='Enter your password']")
+    @FindBy(xpath = "(//div[@class='invalid-feedback'])[8]")
     public WebElement passwordGirUyarisi;
 
 
@@ -125,11 +129,14 @@ public class ViceDeanManagementHomePage {
     public WebElement PhoneNumberDogruDegilUyarisi;
 
 
-    @FindBy(xpath = "(//*[text()='Please enter valid SSN number'])[1]")
+    @FindBy(xpath = "(//div[@class='Toastify__toast-body'])[1]")
     public WebElement ssnDogruDegilUyarisi;
 
     @FindBy(xpath = "(//*[text()='Vice dean Saved'])[1]")
     public WebElement viceDeanSavedUyarisi;
+
+@FindBy(xpath = "(//*[text()='Admin Saved'])[1]")
+    public WebElement adminSavedUyarisi;
 
 
     // Vice Dean Listesindeki ilk satir locateleri  ( sayfanin  en alti )
@@ -178,7 +185,7 @@ public class ViceDeanManagementHomePage {
     public WebElement contactName;
 
     @FindBy(xpath = "((//tr)[2]/td)[2]")
-    public WebElement lcontactMail;
+    public WebElement contactMail;
 
     @FindBy(xpath = "((//tr)[2]/td)[3]")
     public WebElement contactDate;
@@ -188,6 +195,9 @@ public class ViceDeanManagementHomePage {
 
     @FindBy(xpath = "((//tr)[2]/td)[5]")
     public WebElement message;
+
+    @FindBy(xpath = "((//tr)[2]/td)[6]")
+    public WebElement deleteButton;
 
     // Contact Message Listesindeki  en alt soldaki sayfa ilerletme lokateleri üstekiler ile ayni
 
