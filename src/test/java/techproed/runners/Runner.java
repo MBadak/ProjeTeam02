@@ -13,8 +13,8 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",
         glue = {"techproed/stepDefinition"},
         tags = "",       // bu kismi push ederken bos birakin
-        dryRun = false,
-        monochrome = true
+        dryRun = false
+       // monochrome = true
 
 )
 

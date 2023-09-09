@@ -144,6 +144,8 @@ public class ReusableMethods {
         }
     }
 
+
+
     //JS Scroll
     public static void scroll(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
@@ -198,5 +200,13 @@ public class ReusableMethods {
         } catch (Exception ignored) {
 
         }
+
+
+
     }
+    public static void jsClear(WebElement element) {
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("arguments[0].value = '';", element);
+    }
+
 }
