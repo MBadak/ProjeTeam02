@@ -168,7 +168,7 @@ public class US04_AdminDeanEkleyebilmeliStepDefs {
    assertTrue(deanManagementPage.alertDeanSaved.isDisplayed());
     }
 
-    @And("Kullanici sayfayi kapatir")
+    @And("kullanici sayfayi kapatir")
     public void kullaniciSayfayiKapatir() {
          Driver.closeDriver();
     }
