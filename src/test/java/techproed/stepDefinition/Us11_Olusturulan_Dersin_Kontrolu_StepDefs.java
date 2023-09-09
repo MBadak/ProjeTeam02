@@ -9,7 +9,7 @@ import techproed.utilities.ReusableMethods;
 
 import static org.junit.Assert.assertTrue;
 
-public class Us11_StepDefs {
+public class Us11_Olusturulan_Dersin_Kontrolu_StepDefs {
     MainLoginPage mainLogin = new MainLoginPage();
     LessonManagementHomepage viceDean = new LessonManagementHomepage();
     Actions actions = new Actions(Driver.getDriver());

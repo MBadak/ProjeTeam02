@@ -13,7 +13,7 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
-public class Us10_StepDefs {
+public class Us10_Ders_Programi_Olustur_StepDefs {
     MainLoginPage mainLogin = new MainLoginPage();
     LessonManagementHomepage viceDean = new LessonManagementHomepage();
     Actions actions = new Actions(Driver.getDriver());
