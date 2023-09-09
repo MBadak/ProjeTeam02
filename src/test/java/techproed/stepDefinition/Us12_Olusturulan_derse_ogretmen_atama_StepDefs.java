@@ -9,7 +9,7 @@ import techproed.pages.MainLoginPage;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
-public class Us12_StepDefs {
+public class Us12_Olusturulan_derse_ogretmen_atama_StepDefs {
     MainLoginPage mainLogin = new MainLoginPage();
     LessonManagementHomepage viceDean = new LessonManagementHomepage();
     Actions actions = new Actions(Driver.getDriver());
