@@ -11,6 +11,9 @@ public class DeanManagementHomePage {
         PageFactory.initElements(Driver.getDriver(), this);
     }
 
+    @FindBy(xpath = "//button[.='Menu']")
+    public WebElement menu;
+
     @FindBy(xpath = "//a[text()='Dean Management']")
     public WebElement deanManagementButonu;
 

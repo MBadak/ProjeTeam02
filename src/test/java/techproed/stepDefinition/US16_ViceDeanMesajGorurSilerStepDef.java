@@ -70,7 +70,7 @@ public class US16_ViceDeanMesajGorurSilerStepDef {
     }
     @Then("Kullanici sayfa kapatir.")
     public void kullanici_sayfa_kapatir() {
-        Driver.quitDriver();
+        Driver.getDriver().quit();
 
     }
 
