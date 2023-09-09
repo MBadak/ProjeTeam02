@@ -29,7 +29,7 @@ Feature: US04_Admin Dean Ekleyebilmeli Testi
   And kullanici password kutusunun bos olmadigini test eder
   And kullanici submit butonuna tiklar
   And kullanici basarili bir sekilde Dean ekledigini dogrular.
-  And Kullanici sayfayi kapatir
+
     Examples:
       | name | surname | birth place | gender | dogum tarihi | phone number |     ssn   | username | password |
       |Vera  | Hank    |Amsterdam   |  female  | 04.04.1994  | 532-000-1111 |324-24-2424| VeraHank  |Vera1hank |
@@ -46,7 +46,7 @@ Feature: US04_Admin Dean Ekleyebilmeli Testi
     And kullanici "<password>" kutusuna büyük harf, kücük harf, rakam ve en az sekiz karekterden olusan password girer
     And kullanici submit butonuna tiklar
     And kullanici dogru formatta ssn gir ikazini gorur
-    And Kullanici sayfayi kapatir
+
     Examples:
       | name | surname | birth place | gender | dogum tarihi | phone number |     ssn   | username | password |
       |Vera  | Hank    |Amsterdam   |  female  | 04.04.1994  | 532-000-1111 |324 24 2424| VeraHank  |Vera1hank |
@@ -63,7 +63,7 @@ Feature: US04_Admin Dean Ekleyebilmeli Testi
     And kullanici "<password1>" kutusuna BUYUK HARF kullanmadan bir sifre girer
     And kullanici submit butonuna tiklar
     And kullanici One uppercase character ikazini gorur
-    And Kullanici sayfayi kapatir
+
     Examples:
       | name | surname | birth place | gender | dogum tarihi | phone number |     ssn   | username | password1|
       |Vera  | Hank    |Amsterdam   |  female  | 04.04.1994  | 532-000-1111 |324-24-2424| VeraHank  |vera1hank |
@@ -80,7 +80,7 @@ Feature: US04_Admin Dean Ekleyebilmeli Testi
     And kullanici "<password2>" kutusuna KUCUK HARF kullanmadan bir sifre girer
     And kullanici submit butonuna tiklar
     And kullanici One lowercase character ikazini gorur
-    And Kullanici sayfayi kapatir
+
     Examples:
       | name | surname | birth place | gender | dogum tarihi | phone number |     ssn   | username | password2 |
       |Vera  | Hank    |Amsterdam   |  female  | 04.04.1994  | 532-000-1111 |324-24-2424| VeraHank  |VERA1HANK |
@@ -97,7 +97,7 @@ Feature: US04_Admin Dean Ekleyebilmeli Testi
     And kullanici "<password3>" kutusuna RAKAM kullanmadan bir sifre girer
     And kullanici submit butonuna tiklar
     And kullanici One number ikazini gorur
-    And Kullanici sayfayi kapatir
+    And kullanici sayfayi kapatir
     Examples:
       | name | surname | birth place | gender | dogum tarihi | phone number |     ssn   | username | password3 |
       |Vera  | Hank    |Amsterdam   |  female  | 04.04.1994  | 532-000-1111 |324-24-2424| VeraHank  |VERAhank |
