@@ -32,6 +32,8 @@ public class US16_ViceDeanMesajGorurSilerStepDef {
         loginPage.password.sendKeys(ConfigReader.getProperty("viceDeanPassword"));
         loginPage.loginButton.click();
 
+
+
     }
     @When("Kullanici Menu ye  tiklar.")
     public void kullanici_menu_ye_tiklar() {
