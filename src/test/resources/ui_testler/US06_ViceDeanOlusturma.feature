@@ -114,3 +114,5 @@ Feature: US06 Dean, Vice Dean Olusturma
     Examples:
       | Name            | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name       | Password | Password1 | Password2 |
       | ViceDeanTeam02m | Team02e | Deutschland | 01-01-1991    | 963-852-0147 | 369-87-7410 | ViceDeanTeam02m | abc123., | ABC123., | abcABC., |
+
+

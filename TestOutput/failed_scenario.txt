@@ -1,1 +1,0 @@
-file:src/test/resources/features/US05_Admin%20Dean%20Gorebilmeli%20Silebilmeli%20Testi.feature:30

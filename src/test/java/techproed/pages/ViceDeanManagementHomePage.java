@@ -199,7 +199,8 @@ public class ViceDeanManagementHomePage {
     @FindBy(xpath = "((//tr)[2]/td)[6]")
     public WebElement deleteButton;
 
-    // Contact Message Listesindeki  en alt soldaki sayfa ilerletme lokateleri üstekiler ile ayni
 
+
+    // Contact Message Listesindeki  en alt soldaki sayfa ilerletme lokateleri üstekiler ile ayni
 
 }
