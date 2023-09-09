@@ -1,6 +1,8 @@
 @US06 @ALL
 Feature: US06 Dean, Vice Dean Olusturma
 
+
+
   @US06/TC01
   Scenario Outline: TC01 Vice Dean Hesabı Oluşturma Pozitif Testi
     Given Kullanici anasayfaya gider.
