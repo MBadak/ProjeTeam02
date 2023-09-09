@@ -264,7 +264,7 @@ public class US23_ViceDeanOlusturmaStepDefs {
         assertTrue(viceDeanManagementHomePage.passwordRakamEksikUyarisi.isDisplayed());
     }
 
-    @Then("Kullanici sayfayi kapatir")
+    @Then("Kullanici sayfayi kapatir..")
     public void kullanici_sayfayi_kapatir() {
        Driver.closeDriver();
     }

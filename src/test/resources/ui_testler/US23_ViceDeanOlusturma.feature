@@ -28,7 +28,7 @@ Feature: US23 Admin, Vice Dean Olusturma
     And Kullanici Password kutusunun bos olmadigini test eder
     Then Kullanici Submit butonunu tiklar
     And Kullanici basarili bir sekilde Vice Dean ekledigini dogrular
-    And Kullanici sayfayi kapatir
+    And Kullanici sayfayi kapatir..
 
     Examples:
       | Name           | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name      | Password        |
@@ -60,7 +60,7 @@ Feature: US23 Admin, Vice Dean Olusturma
     Then Kullanici "<Ssn2>" kutusuna -9- karakterden az bir SSN girer
     And Kullanici Submit butonunu tiklar
     And Kullanici eksik karakter girdigini dorular
-    And Kullanici sayfayi kapatir
+    And Kullanici sayfayi kapatir..
 
     Examples:
       | Name            | Surname | Birth Place | Date Of Birth | Phone        | User Name            | Password         | Ssn         | Ssn1         | Ssn2       |
@@ -84,7 +84,7 @@ Feature: US23 Admin, Vice Dean Olusturma
     Then Kullanici "<Password>" kutusuna sekiz karakterden kucuk bir sifre girer
     And Kullanici Submit butonunu tiklar
     And Kullanici password icin eksik karakter girdigini dogrular
-    And Kullanici sayfayi kapatir
+    And Kullanici sayfayi kapatir..
 
     Examples:
       | Name            | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name       | Password |
@@ -114,7 +114,7 @@ Feature: US23 Admin, Vice Dean Olusturma
     And Kullanici Password kutusun siler
     Then Kullanici "<Password2>" kutusuna rakam kullanmadan sifre girer
     And Kullanici One number yazisini gordugunu dogrular
-    And Kullanici sayfayi kapatir
+    And Kullanici sayfayi kapatir..
 
     Examples:
       | Name            | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name       | Password | Password1 | Password2 |

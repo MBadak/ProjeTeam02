@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-file:src/test/resources/endtoend_features/US06-ViceDeanOlusturma/TC01_ViceDeanHesabıOluşturmaPozitifTesti.feature:51
-=======
-file:src/test/resources/features/US05_Admin%20Dean%20Gorebilmeli%20Silebilmeli%20Testi.feature:30
->>>>>>> master
