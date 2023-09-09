@@ -12,7 +12,7 @@ public class US15HomePage {
     }
 
     @FindBy(xpath = "//*[@id=\"root\"]/div/header/div[1]/div/div/div[2]/a[2]")
-    public WebElement loginbuton;
+    public WebElement loginbuton;//.
 
     @FindBy(xpath = "//*[@id=\"root\"]/div/header/div[2]/nav/div/span/a/img")
     public WebElement sayfaAssert;
