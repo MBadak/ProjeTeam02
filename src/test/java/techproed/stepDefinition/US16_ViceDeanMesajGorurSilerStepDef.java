@@ -32,6 +32,8 @@ public class US16_ViceDeanMesajGorurSilerStepDef {
         loginPage.password.sendKeys(ConfigReader.getProperty("viceDeanPassword"));
         loginPage.loginButton.click();
 
+
+
     }
     @When("Kullanici Menu ye  tiklar.")
     public void kullanici_menu_ye_tiklar() {
@@ -70,7 +72,7 @@ public class US16_ViceDeanMesajGorurSilerStepDef {
     }
     @Then("Kullanici sayfa kapatir.")
     public void kullanici_sayfa_kapatir() {
-        Driver.quitDriver();
+        Driver.getDriver().quit();
 
     }
 
