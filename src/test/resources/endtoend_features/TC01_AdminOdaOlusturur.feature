@@ -21,5 +21,5 @@ Feature: Medunna Odasi Olusturma
     And Save butonuna tiklanir
     And Uygulama kapatilir
     Examples:
-      | fiyat | aciklama                            |
-      | 123   | End To End Test için oluşturulmuştur|
+      | fiyat | aciklama                             |
+      | 123   | End To End Test için oluşturulmuştur |
