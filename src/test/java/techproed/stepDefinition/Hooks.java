@@ -8,11 +8,13 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import techproed.utilities.Driver;
 
+import static techproed.base_url.ManagementonSchoolsUrl.setUp;
+
 
 public class Hooks {
     @Before
-    public void setUp() throws Exception {
-        System.out.println("Scenariolar calismaya basladi");
+    public void setUpApi() throws Exception {
+       setUp();
     }
 
     @After
