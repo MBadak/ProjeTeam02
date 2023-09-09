@@ -30,16 +30,16 @@ public class US05AdminDeanGorebilmeliSilebilmeliStepDefs {
 
     @When("Kullanici Login olur.")
     public void kullaniciLoginOlur() {
-        mainLoginPage.mainLogin.click();
+        mainLoginPage.loginMenusu.click();
         mainLoginPage.username.sendKeys("AdminBatch151");
         mainLoginPage.password.sendKeys("Batch151+");
-        mainLoginPage.login.click();
+        mainLoginPage.loginButton.click();
         ReusableMethods.bekle(1);
     }
 
     @And("kullanıcı Menu butonuna tıklar.")
     public void kullanıcıMenuButonunaTıklar() {
-        ReusableMethods.click(mainLoginPage.menu);
+        ReusableMethods.click(deanManagementPage.menu);
     }
 
     @And("kullanıcı  Dean Management butonunu tiklar.")
