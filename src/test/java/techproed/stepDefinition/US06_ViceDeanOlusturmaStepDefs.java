@@ -189,7 +189,8 @@ public class US06_ViceDeanOlusturmaStepDefs {
     }
     @Then("Kullanici Please enter valid SSN number alert uyarisi goruldugunu dogrular.")
     public void kullanici_please_enter_valid_ssn_number_alert_uyarisi_gordugunu_dogrular() {
-        ReusableMethods.bekle(1);
+      //  ReusableMethods.bekle(1);
+       ReusableMethods.visibleWait(viceDeanManagementHomePage.ssnDogruDegilUyarisi,3);
        assertTrue(viceDeanManagementHomePage.ssnDogruDegilUyarisi.isDisplayed());
        ReusableMethods.bekle(3);
 

@@ -32,3 +32,24 @@ Feature: US06 Dean, Vice Dean Olusturma
     Examples:
       | Name           | Surname | Birth Place | Date Of Birth | Phone        | Ssn         | User Name      | Password        |
       | ViceDeanTeam02 | Team02  | Deutschland | 01-01-1991    | 963-852-7410 | 369-87-4102 | ViceDeanTeam02 | ViceDeanTeam02. |
+
+  @US06API
+  Scenario Outline: TC02 Get Vice Dean request ile dogrulama
+    Given GET Request "<UserId>" gonderilir.
+    Then Status kodu dogrula.
+
+    Then Response'den gelen "<Name>" Name dogrula.
+    Then Response'den gelen "<Surname>" Surname dogrula.
+    Then Response'den gelen "<Birth Place>" Birth Place dogrula.
+    Then Response'den gelen "<Gender>" Gender dogrula.
+    Then Response'den gelen "<Date Of Birth>" Date Of Birthdogrula.
+    Then Response'den gelen "<Phone>" Phone dogrula.
+    Then Response'den gelen "<Ssn>" Ssndogrula.
+    Then Response'den gelen "<User Name>" User Name dogrula.
+
+    Examples:
+      | UserId | Name           | Surname | Birth Place       | Gender | Date Of Birth         | Phone        | Ssn         | User Name    |
+      | 64     | ViceDeanTeam02 | Team02  | Deutschland Place | MALE   | Date 1991-01-01 Birth | 482 578 8887 | 629-67-2533 | vera.ullrich |
+
+
+

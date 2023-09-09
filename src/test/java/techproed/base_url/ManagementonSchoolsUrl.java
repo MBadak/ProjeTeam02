@@ -12,9 +12,10 @@ public class ManagementonSchoolsUrl {
     //Testi calistrdigimizda spec objesinin null gelmemesi icin setup() methodunun calistirilmasi gerekir.
     //Cucumber' da her testten once calistirmak istedigimiz methodlari Hooks class' i icesine ekleriz
     //Olusturdugumuz Hooks classini Runner clastaki glue kisminda tanimlamamiz gerekir
+
     public static void setUp(){
         spec = new RequestSpecBuilder()
-                .setBaseUri("https://managementonschools.com")
+                .setBaseUri("https://managementonschools.com/app")
                 .addHeader("Authorization", "Bearer "+generateToken())
                 .setContentType(ContentType.JSON)
                 .build();
