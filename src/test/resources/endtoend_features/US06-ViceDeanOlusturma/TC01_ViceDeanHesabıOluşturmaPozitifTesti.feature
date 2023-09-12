@@ -35,7 +35,7 @@ Feature: US06 Dean, Vice Dean Olusturma
 
   @US06API
   Scenario Outline: TC02 Get Vice Dean request ile dogrulama
-    Given GET Request "<UserId>" gonderilir.
+    Given GET Request gonderilir.
     Then Status kodu dogrula.
 
     Then Response'den gelen "<Name>" Name dogrula.

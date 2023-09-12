@@ -16,7 +16,7 @@ public class ManagementonSchoolsUrl {
     public static void setUp(){
         spec = new RequestSpecBuilder()
                 .setBaseUri("https://managementonschools.com/app")
-                .addHeader("Authorization", "Bearer "+generateToken())
+                .addHeader("Authorization", "B+earer "generateToken())
                 .setContentType(ContentType.JSON)
                 .build();
     }
