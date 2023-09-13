@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources",
 
         glue = {"techproed/stepDefinition" },
-        tags = "@US06API",       // bu kismi push ederken bos birakin
+        tags = "@US06E2E",       // bu kismi push ederken bos birakin
 
         dryRun = false,
         monochrome = true
@@ -22,4 +22,5 @@ import org.junit.runner.RunWith;
 
 
 public class Runner {
+
 }

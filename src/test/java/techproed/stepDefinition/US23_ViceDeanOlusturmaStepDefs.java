@@ -14,9 +14,9 @@ import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 public class US23_ViceDeanOlusturmaStepDefs {
-    private static String fakeUsername;
-    private static String fakeSsn;
-    private static String fakePhoneNumber;
+    public static String fakeUsername;
+    public static String fakeSsn;
+    public static String fakePhoneNumber;
     Faker faker = new Faker();
     MainLoginPage loginPage = new MainLoginPage();
     ViceDeanManagementHomePage viceDeanManagementHomePage = new ViceDeanManagementHomePage();

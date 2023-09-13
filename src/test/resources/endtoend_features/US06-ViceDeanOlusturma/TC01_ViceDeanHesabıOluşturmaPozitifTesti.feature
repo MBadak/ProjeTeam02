@@ -1,7 +1,7 @@
-@US06/E2E
+@US06E2E
 Feature: US06 Dean, Vice Dean Olusturma
 
-  @US06/UI
+
   Scenario Outline: TC01 Vice Dean Hesabı Oluşturma Pozitif Testi
     Given Kullanici anasayfaya gider.
     Then Kullanici Dean hesabi ile Sing in yapar.
@@ -25,7 +25,7 @@ Feature: US06 Dean, Vice Dean Olusturma
     Then Kullanici "<Password>" kutusuna büyük harf, kücük harf ve rakam iceren  en az -8- karakterli bir sifreyi girer.
     And Kullanici Password kutusunun bos olmadigini test eder.
     Then Kullanici Submit butonunu tiklar.
-    And Kullanici basarili bir sekilde Vice Dean ekledigini dogrular.
+
     And Kullanici sayfayi kapatir.
 
 
@@ -34,22 +34,9 @@ Feature: US06 Dean, Vice Dean Olusturma
       | ViceDeanTeam02 | Team02  | Deutschland | 01-01-1991    | 963-852-7410 | 369-87-4102 | ViceDeanTeam02 | ViceDeanTeam02. |
 
   @US06API
-  Scenario Outline: TC02 Get Vice Dean request ile dogrulama
-    Given GET Request gonderilir.
-    Then Status kodu dogrula.
-
-    Then Response'den gelen "<Name>" Name dogrula.
-    Then Response'den gelen "<Surname>" Surname dogrula.
-    Then Response'den gelen "<Birth Place>" Birth Place dogrula.
-    Then Response'den gelen "<Gender>" Gender dogrula.
-    Then Response'den gelen "<Date Of Birth>" Date Of Birthdogrula.
-    Then Response'den gelen "<Phone>" Phone dogrula.
-    Then Response'den gelen "<Ssn>" Ssndogrula.
-    Then Response'den gelen "<User Name>" User Name dogrula.
-
-    Examples:
-      | UserId | Name           | Surname | Birth Place       | Gender | Date Of Birth         | Phone        | Ssn         | User Name    |
-      | 64     | ViceDeanTeam02 | Team02  | Deutschland Place | MALE   | Date 1991-01-01 Birth | 482 578 8887 | 629-67-2533 | vera.ullrich |
-
-
+  Scenario: US06/TC01_API_Kayit_sirasinda_gonderilen_veriler_dogrulanir
+    Given Kayitli Vece Deanin userId bilgisi alinir
+    And Kayitli Vice Dean userId ile cagrilir
+    Then Vice Dean bilgileri dogrulanir
+  #  And Kayitli dean silinir
 

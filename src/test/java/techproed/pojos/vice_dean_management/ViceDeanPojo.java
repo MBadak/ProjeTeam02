@@ -1,4 +1,4 @@
-package techproed.pojos;
+package techproed.pojos.vice_dean_management;
 
 import java.io.Serializable;
 
@@ -27,6 +27,8 @@ public class ViceDeanPojo implements Serializable {
 		this.surname = surname;
 		this.username = username;
 	}
+
+
 
 	public void setBirthDay(String birthDay){
 		this.birthDay = birthDay;

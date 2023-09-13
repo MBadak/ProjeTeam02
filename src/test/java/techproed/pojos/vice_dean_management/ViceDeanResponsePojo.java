@@ -1,26 +1,26 @@
-package techproed.pojos;
+package techproed.pojos.vice_dean_management;
 
 import java.io.Serializable;
 
-public class ResponsePojo implements Serializable {
-	private ObjectPojo object;
+public class ViceDeanResponsePojo implements Serializable {
+	private ViceDeanObjectPojo object;
 	private String message;
 	private String httpStatus;
 
-	public ResponsePojo() {
+	public ViceDeanResponsePojo() {
 	}
 
-	public ResponsePojo(ObjectPojo object, String message, String httpStatus) {
+	public ViceDeanResponsePojo(ViceDeanObjectPojo object, String message, String httpStatus) {
 		this.object = object;
 		this.message = message;
 		this.httpStatus = httpStatus;
 	}
 
-	public void setObject(ObjectPojo object){
+	public void setObject(ViceDeanObjectPojo object){
 		this.object = object;
 	}
 
-	public ObjectPojo getObject(){
+	public ViceDeanObjectPojo getObject(){
 		return object;
 	}
 

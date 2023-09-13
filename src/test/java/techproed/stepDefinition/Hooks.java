@@ -6,7 +6,10 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+
+import java.time.Duration;
 
 import static techproed.base_url.ManagementonSchoolsUrl.setUp;
 
@@ -14,7 +17,9 @@ import static techproed.base_url.ManagementonSchoolsUrl.setUp;
 public class Hooks {
     @Before
     public void setUpApi() throws Exception {
+
        setUp();
+
     }
 
     @After
