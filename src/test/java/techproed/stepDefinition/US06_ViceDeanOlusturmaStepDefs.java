@@ -11,6 +11,8 @@ import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
 
+import java.time.Duration;
+
 import static org.junit.Assert.*;
 
 public class US06_ViceDeanOlusturmaStepDefs {
@@ -24,10 +26,12 @@ public class US06_ViceDeanOlusturmaStepDefs {
     @Given("Kullanici anasayfaya gider.")
     public void kullanici_anasayfaya_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("Url"));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(25));
+        Driver.getDriver().manage().window().maximize();
     }
 
     @Then("Kullanici Dean hesabi ile Sing in yapar.")
-    public void kullanici_dean_hesabi_ile_sing_in_yapar() {
+    public void  kullanici_dean_hesabi_ile_sing_in_yapar() {
         ReusableMethods.bekle(2);
         loginPage.loginMenusu.click();
         loginPage.username.clear();

@@ -1,1 +1,0 @@
-file:src/test/resources/endtoend_features/US06-ViceDeanOlusturma/TC01_ViceDeanHesabıOluşturmaPozitifTesti.feature:52

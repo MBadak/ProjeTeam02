@@ -6,15 +6,21 @@ import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
+
+import java.time.Duration;
 
 import static techproed.base_url.ManagementonSchoolsUrl.setUp;
 
 
 public class Hooks {
     @Before
-    public void setUpApi() throws Exception {
-       setUp();
+    public void setUpApi(String password, String username) throws Exception {
+       setUp(password,username);
+        Driver.getDriver().get(ConfigReader.getProperty("Url"));
+        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        Driver.getDriver().manage().window().maximize();
     }
 
     @After
