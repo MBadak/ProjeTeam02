@@ -38,5 +38,5 @@ Feature: US06 Dean, Vice Dean Olusturma
     Given Kayitli Vece Deanin userId bilgisi alinir
     And Kayitli Vice Dean userId ile cagrilir
     Then Vice Dean bilgileri dogrulanir
-  #  And Kayitli dean silinir
+    And Kayitli dean silinir
 
