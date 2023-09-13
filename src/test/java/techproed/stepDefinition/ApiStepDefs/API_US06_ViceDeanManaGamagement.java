@@ -12,13 +12,11 @@ import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
 import static techproed.base_url.ManagementonSchoolsUrl.setUp;
 import static techproed.base_url.ManagementonSchoolsUrl.spec;
-import static techproed.stepDefinition.US06_ViceDeanOlusturmaStepDefs.*;
+import static techproed.stepDefinition.ui_stepDefs.US06_ViceDeanOlusturmaStepDefs.*;
 
 
 public class API_US06_ViceDeanManaGamagement {
     ViceDeanPojo expectedData;
-    ViceDeanResponsePojo actualData;
-    ViceDeanPojo viceDeanPojo;
     Response response;
     int userId;
 
