@@ -1,4 +1,4 @@
-package techproed.stepDefinition;
+package techproed.stepDefinition.ui_stepDefs;
 
 import io.cucumber.java.en.Then;
 import techproed.pages.ViceDeanManagementHomePage;
