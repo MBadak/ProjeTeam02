@@ -20,4 +20,13 @@ public class ManagementonSchoolsUrl {
                 .setContentType(ContentType.JSON)
                 .build();
     }
+ public static void setUp(){
+        spec = new RequestSpecBuilder()
+                .setBaseUri("https://managementonschools.com/app")
+                .setContentType(ContentType.JSON)
+                .build();
+    }
+
+
+
 }

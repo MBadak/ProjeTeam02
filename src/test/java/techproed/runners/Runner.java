@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources",
 
         glue = {"techproed/stepDefinition" },
-        tags = " @US06/TC02",       // bu kismi push ederken bos birakin
+        tags = "@US06/TC02",       // bu kismi push ederken bos birakin
 
         dryRun = false,
         monochrome = true
