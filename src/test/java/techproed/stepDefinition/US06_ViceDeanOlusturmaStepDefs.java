@@ -7,6 +7,7 @@ import org.openqa.selenium.Keys;
 
 import techproed.pages.MainLoginPage;
 import techproed.pages.ViceDeanManagementHomePage;
+import techproed.pojos.vice_dean_management.ViceDeanObjectPojo;
 import techproed.utilities.ConfigReader;
 import techproed.utilities.Driver;
 import techproed.utilities.ReusableMethods;
@@ -16,13 +17,13 @@ import java.time.Duration;
 import static org.junit.Assert.*;
 
 public class US06_ViceDeanOlusturmaStepDefs {
-    private static String fakeUsername;
-    private static String fakeSsn;
-    private static String fakePhoneNumber;
+    public static String fakeUsername;
+    public static String fakeSsn;
+    public static String fakePhoneNumber;
     Faker faker = new Faker();
     MainLoginPage loginPage = new MainLoginPage();
     ViceDeanManagementHomePage viceDeanManagementHomePage = new ViceDeanManagementHomePage();
-
+    public static  ViceDeanObjectPojo viceDeanObjectPojo = new ViceDeanObjectPojo();
     @Given("Kullanici anasayfaya gider.")
     public void kullanici_anasayfaya_gider() {
         Driver.getDriver().get(ConfigReader.getProperty("Url"));
@@ -131,6 +132,7 @@ public class US06_ViceDeanOlusturmaStepDefs {
         fakePhoneNumber = faker.number().numberBetween(100, 999) + " " + faker.number().numberBetween(100, 999) + " " + faker.number().numberBetween(1000, 9999);
 
         viceDeanManagementHomePage.phoneNumber.sendKeys(fakePhoneNumber);
+        viceDeanObjectPojo.setPhoneNumber(fakePhoneNumber);
     }
 
     @Then("Kullanici Phone kutusunun bos olmadigini test eder.")
@@ -142,17 +144,20 @@ public class US06_ViceDeanOlusturmaStepDefs {
     public void kullanici_ssn_kutusuna_gecerli_bir_ssn_girer(String ssn) {
         fakeSsn = faker.idNumber().ssnValid();
         viceDeanManagementHomePage.ssn.sendKeys(fakeSsn);
+        viceDeanObjectPojo.setSsn(fakeSsn);
     }
 
     @Then("Kullanici Ssn kutusunun bos olmadigini test eder.")
     public void kullanici_ssn_kutusunun_bos_olmadigini_test_eder() {
         assertFalse(viceDeanManagementHomePage.requiredSsn.isDisplayed());
+
     }
 
     @Then("Kullanici {string} kutusuna gecerli bir User Name girer.")
     public void kullanici_username_kutusuna_gecerli_bir_username_girer(String username) {
         fakeUsername = faker.name().username();
         viceDeanManagementHomePage.userName.sendKeys(fakeUsername);
+        viceDeanObjectPojo.setUsername(fakeUsername);
     }
 
     @Then("Kullanici User Name kutusunun bos olmadigini test eder.")

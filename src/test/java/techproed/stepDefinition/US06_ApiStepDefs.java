@@ -2,13 +2,8 @@ package techproed.stepDefinition;
 
 import io.cucumber.java.en.*;
 import io.restassured.response.Response;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
-import techproed.pojos.ResponsePojo;
-import techproed.pojos.ViceDeanPojo;
-import techproed.utilities.Driver;
-
-import java.util.List;
+import techproed.pojos.vice_dean_management.ViceDeanResponsePojo;
+import techproed.pojos.vice_dean_management.ViceDeanPojo;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertEquals;
@@ -17,7 +12,7 @@ import static techproed.base_url.ManagementonSchoolsUrl.spec;
 public class US06_ApiStepDefs {
     ViceDeanPojo expectedData;
     Response response;
-    ResponsePojo actualData;
+    ViceDeanResponsePojo actualData;
 
     //https://managementonschools.com/app/vicedean/save
     @Given("GET Request gonderilir.")
@@ -37,7 +32,7 @@ public class US06_ApiStepDefs {
 
         // Send the request and get the response
         response = given(spec).body(expectedData).when().post("{first}/{second}");
-        actualData = response.as(ResponsePojo.class);
+        actualData = response.as(ViceDeanResponsePojo.class);
 
     }
     @Then("Status kodu dogrula.")

@@ -16,12 +16,10 @@ import static techproed.base_url.ManagementonSchoolsUrl.setUp;
 
 public class Hooks {
     @Before
-    public void setUpApi(String password, String username) throws Exception {
+    public void setUpApi() throws Exception {
 
        setUp();
-        Driver.getDriver().get(ConfigReader.getProperty("Url"));
-        Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        Driver.getDriver().manage().window().maximize();
+
     }
 
     @After

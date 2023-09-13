@@ -1,8 +1,8 @@
-package techproed.pojos;
+package techproed.pojos.vice_dean_management;
 
 import java.io.Serializable;
 
-public class ObjectPojo implements Serializable {
+public class ViceDeanObjectPojo implements Serializable {
 	private int userId;
 	private String username;
 	private String name;
@@ -13,7 +13,7 @@ public class ObjectPojo implements Serializable {
 	private String phoneNumber;
 	private String gender;
 
-	public ObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
+	public ViceDeanObjectPojo(int userId, String username, String name, String surname, String birthDay, String ssn, String birthPlace, String phoneNumber, String gender) {
 		this.userId = userId;
 		this.username = username;
 		this.name = name;
@@ -25,7 +25,7 @@ public class ObjectPojo implements Serializable {
 		this.gender = gender;
 	}
 
-	public ObjectPojo() {
+	public ViceDeanObjectPojo() {
 	}
 
 	public void setUserId(int userId){
